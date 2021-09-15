@@ -14,7 +14,6 @@ Create a program that allows a user to create a username and password.
 """
 
 
-
 class User:
 
     # Sets up the user
