@@ -77,7 +77,13 @@ class User:
 while True:
     user = input("Please input a username: ")
     pwd = input("Please input a password: ")
-    createdUser = User(user, pwd)
+    pwd1 = input("Please re-input password: ")
+
+    if pwd == pwd1:
+        createdUser = User(user, pwd)
+    else:
+        print("Passwords didn't match")
+        continue
 
     if createdUser.ok:
         print(f"Your password scored {createdUser.passwordStrength()} out of a maximum of 8.")
